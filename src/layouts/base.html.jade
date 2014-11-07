@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  title= document.title
+  != getBlock("meta").toHTML()
+  != getBlock("styles").add(["/styles/index.css"]).toHTML()
+body
+  != content
+  != getBlock("scripts").toHTML()
+  
