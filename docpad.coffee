@@ -4,7 +4,6 @@
 # Define the DocPad Configuration
 docpadConfig = {
 
-  ignoreCustomPatterns: /templates/
 
   watchOptions:
     catchupDelay: 0
@@ -37,7 +36,13 @@ docpadConfig = {
       maxAge: false  # default
 
       # Listen to port 9005 on the development environment
-      port: 8080  # example
+      port: 4000  # example
+
+  collections:
+    projects: ->
+      @getCollection("html").findAllLive({relativeDirPath: "projects"},[{order: 1}])
+    projectFigures: ->
+      @getCollection("html").findAllLive({relativeDirPath: "projects/figures"})
 }
 
 # Export the DocPad Configuration

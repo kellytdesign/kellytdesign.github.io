@@ -1,0 +1,12 @@
+---
+title: LiveBlue
+title_logo: logo-liveblue.svg
+role: UX, UI, iOS Design
+primary: false
+order: 3
+link:
+  text: Launch Website
+  url:
+---
+
+Through Cremalab, I worked with Blue Cross Blue Shield Kansas City to create an iOS app that allows users to discover nearby health-oriented locations.

@@ -1,0 +1,72 @@
+---
+title: Kelly Tomlinson
+layout: base
+---
+
+- var projects = getCollection("projects").toJSON()
+- var figures = getCollection("projectFigures").toJSON()
+
+section.megaHello
+  .h1.size-up-1 Oh, hello.
+
+section.intro
+  h1 
+    | I’m Kelly Tomlinson.
+    p: small: em I create engaging experiences for web, ios, brands, and events. 
+  a(href='mailto:hi@kellytdesign.com') hi@kellytdesign.com
+
+section.projects.sub-primary
+  - for project in projects
+    if project.primary == true
+      article.project.sub-primary(class= "sub-" + project.slug)
+        .project-header
+          if project.title_logo
+            img.project-header-logo(src="images/projects/logos/" + project.title_logo, alt= project.title)
+            h2.project-header-title.state-hidden= project.title
+          else
+            h2.project-header-title= project.title
+        .project-body
+          .grid.auto: .grid-items
+            .col.project-body-content
+              h3.project-role= project.role
+              .project-description!= project.contentRendered
+              if project.link.url
+                .project-link
+                  a(href=project.link.url)= project.link.text
+            - for figure in figures
+              if figure.title == project.figure
+                figure.col.project-body-figure(class= "sub-" + figure.title)
+                  != figure.contentRendered
+
+section.projects.sub-secondary
+  - for project in projects
+    if project.primary == false
+      .project.sub-secondary
+        if project.title_logo
+          img(src="images/projects/logos/" + project.title_logo)
+          h2.project-title.state-hidden= project.title
+        else
+          h2.project-title= project.title
+        h3.project-role= project.role
+        .project-description!= project.contentRendered
+        if project.link.url
+          .project-link
+            a(href=project.link.url)= project.link.text
+        - for figure in figures
+          if figure.title == project.figure
+            != figure.contentRendered
+
+section.footer
+  nav
+    ul
+      li Twitter
+      li Dribbble
+      li Linkedin
+      li Rdio
+      li Instagram
+  hr
+  p 
+    | This was designed solely 40,000 feet up in the air flying coast to coast
+    | across fourteen days. It came to life through the amazing dev skills of Rob LaFeve. 
+
+  p ©2014 Kelly Tomlinson // KELLYTDESIGN, LLC.

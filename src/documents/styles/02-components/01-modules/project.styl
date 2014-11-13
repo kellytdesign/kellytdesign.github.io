@@ -1,0 +1,62 @@
+.project
+  &.sub-primary
+    @extend .nest-1
+    @extend .v-space-none
+    color black-tint-3
+    overflow hidden
+    &:nth-child(odd)
+      .project-body-figure
+        transform translate3d(20%, 0, 0)
+      &:hover
+        .project-body-figure
+          transform translate3d(0%, 0, 0)
+    &:nth-child(even)
+      .grid-items
+        direction rtl
+      .col
+        direction ltr
+      .project-body-figure
+        transform translate3d(-20%, 0, 0)
+      &:hover
+        .project-body-figure
+          transform translate3d(0%, 0, 0)
+        
+    .project-header
+      @extend .pad-1
+
+    .grid
+      margin 0 auto
+      max-width 60em
+      
+    .col
+      @media (max-width: 768px)
+        display block
+  
+  &.sub-coffeedesign { background: blue }
+  &.sub-wazoo        { background: orange }
+  &.sub-chaat20      { background: purple }
+  &.sub-bigkc        { background: yellow }
+  &.sub-ebcfo        { background: blue-tint-1 }
+  &.sub-30days       { background: black-tint-1 }
+      
+.project-header
+  text-align center
+
+.project-header-title
+  &.state-hidden
+    opacity 0
+    position absolute
+
+.project-header-logo
+  
+.project-body
+  null
+.project-body-content
+  @extend .pad-1
+  vertical-align middle
+.project-body-figure
+  backface-visibility hidden
+  transition all 0.5s ease-in-out
+  text-align center
+  vertical-align bottom
+  line-height 0
