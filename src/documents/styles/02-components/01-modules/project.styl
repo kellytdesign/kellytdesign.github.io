@@ -1,43 +1,38 @@
 .project
   &.sub-primary
     @extend .nest-1
-    @extend .v-space-none
     color black-tint-3
-    overflow hidden
-    &:nth-child(odd)
-      .project-body-figure
-        transform translate3d(20%, 0, 0)
-      &:hover
-        .project-body-figure
-          transform translate3d(0%, 0, 0)
-    &:nth-child(even)
+    .section.sub-project:nth-child(odd) &
+      figure
+        margin-right -50%
+        img
+          width 100%
+          max-width 600px
+    .section.sub-project:nth-child(even) &
       .grid-items
         direction rtl
       .col
         direction ltr
+        
       .project-body-figure
-        transform translate3d(-20%, 0, 0)
-      &:hover
-        .project-body-figure
-          transform translate3d(0%, 0, 0)
+        text-align right
+      figure
+        margin-left -50%
+        img
+          width 100%
+          max-width 600px
         
     .project-header
-      @extend .pad-1
-
-    .grid
-      margin 0 auto
-      max-width 60em
+      null
+    .project-body-content
+      @extend .nest-3
+      @extend .pad-b-1
+      @media (max-width: 768px)
+        padding-bottom 0
       
     .col
       @media (max-width: 768px)
         display block
-  
-  &.sub-coffeedesign { background: blue }
-  &.sub-wazoo        { background: orange }
-  &.sub-chaat20      { background: purple }
-  &.sub-bigkc        { background: yellow }
-  &.sub-ebcfo        { background: blue-tint-1 }
-  &.sub-30days       { background: black-tint-1 }
       
 .project-header
   text-align center
@@ -48,15 +43,15 @@
     position absolute
 
 .project-header-logo
+  null
   
 .project-body
   null
+  
 .project-body-content
-  @extend .pad-1
   vertical-align middle
+  
 .project-body-figure
-  backface-visibility hidden
-  transition all 0.5s ease-in-out
   text-align center
   vertical-align bottom
-  line-height 0
+  line-height 0    

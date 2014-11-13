@@ -4,8 +4,8 @@ head
   meta(charset="UTF-8")
   title= document.title
   != getBlock("meta").toHTML()
-  != getBlock("styles").add(["/styles/index.css"]).toHTML()
-  base(target="_blank")
+  != getBlock("styles").add(site.styles).toHTML()
+
 body
   != content
   != getBlock("scripts").add(site.scripts).toHTML()

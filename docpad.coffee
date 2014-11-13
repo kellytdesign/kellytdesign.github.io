@@ -6,10 +6,12 @@ docpadConfig = {
 
   templateData:
     site:
-      scripts: [
-        'vendor/jquery.min.js'
+      styles: [
+        '/styles/index.css'
       ]
-
+      scripts: [
+        '/vendor/jquery.min.js'
+      ]
 
   watchOptions:
     catchupDelay: 0

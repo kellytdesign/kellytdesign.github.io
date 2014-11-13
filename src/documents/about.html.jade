@@ -51,7 +51,7 @@ section.projects.sub-secondary
         .project-description!= project.contentRendered
         if project.link.url
           .project-link
-            a(href=project.link.url)= project.link.text
+            a(href=project.link.url target="_blank")= project.link.text
         - for figure in figures
           if figure.title == project.figure
             != figure.contentRendered
@@ -59,11 +59,11 @@ section.projects.sub-secondary
 section.footer
   nav
     ul
-      li: a(href="http://twitter.com/kellytdesign") Twitter
-      li: a(href="http://dribbble.com/kellytdesign") Dribbble
-      li: a(href="https://www.linkedin.com/pub/kelly-tomlinson/13/453/3a9") Linkedin
-      li: a(href="http://www.rdio.com/people/kellytdesign/") Rdio
-      li: a(href="http://instagram.com/kellytdesign") Instagram
+      li: a(href="http://twitter.com/kellytdesign" target="_blank") Twitter
+      li: a(href="http://dribbble.com/kellytdesign" target="_blank") Dribbble
+      li: a(href="https://www.linkedin.com/pub/kelly-tomlinson/13/453/3a9" target="_blank") Linkedin
+      li: a(href="http://www.rdio.com/people/kellytdesign/" target="_blank") Rdio
+      li: a(href="http://instagram.com/kellytdesign" target="_blank") Instagram
   hr
   p 
     | This was designed solely 40,000 feet up in the air flying coast to coast
