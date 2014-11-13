@@ -7,7 +7,7 @@ primary: true
 order: 2
 link:
   text: Launch Website
-  url:
+  url: http://getwazoo.com
 figure: wazoo
 ---
 

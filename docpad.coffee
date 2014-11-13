@@ -4,6 +4,12 @@
 # Define the DocPad Configuration
 docpadConfig = {
 
+  templateData:
+    site:
+      scripts: [
+        'vendor/jquery.min.js'
+      ]
+
 
   watchOptions:
     catchupDelay: 0

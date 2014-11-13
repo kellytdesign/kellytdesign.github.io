@@ -5,7 +5,8 @@ head
   title= document.title
   != getBlock("meta").toHTML()
   != getBlock("styles").add(["/styles/index.css"]).toHTML()
+  base(target="_blank")
 body
   != content
-  != getBlock("scripts").toHTML()
+  != getBlock("scripts").add(site.scripts).toHTML()
   

@@ -6,7 +6,7 @@ primary: true
 order: 6
 link:
   text: Launch Website
-  url: http://google.com
+  url: 
 figure: 30days
 ---
 
