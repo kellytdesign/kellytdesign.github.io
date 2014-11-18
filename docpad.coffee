@@ -10,7 +10,9 @@ docpadConfig = {
         '/styles/index.css'
       ]
       scripts: [
-        '/vendor/jquery.min.js'
+        '/vendor/jquery.js',
+        '/vendor/scrollMonitor.js',
+        '/scripts/functions.js'
       ]
 
   watchOptions:

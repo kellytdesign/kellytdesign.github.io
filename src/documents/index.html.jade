@@ -8,17 +8,19 @@ layout: base
 
 section.section.sub-megaHello
   .section-content
-    .h1.sub-huge
-      | Oh,
-      br
-      | hello.
+    .grid.height-full.align-middle: .grid-items: .col
+      .h1.sub-huge
+        | Oh,
+        br
+        | hello.
 
 section.section.sub-intro
   .section-content
-    h1 
-      | I’m Kelly Tomlinson.
-      p: small: em I create engaging experiences for web, ios, brands, and events. 
-    p: a.button(href='mailto:hi@kellytdesign.com') hi@kellytdesign.com
+    .grid.height-full.align-middle: .grid-items: .col
+      h1 
+        | I’m Kelly Tomlinson.
+        p: small: em I create engaging experiences for web, ios, brands, and events. 
+      p: a.button.sub-solid.sub-large(href='mailto:hi@kellytdesign.com') hi@kellytdesign.com
 
 .projects
   - for project in projects
@@ -39,7 +41,7 @@ section.section.sub-intro
                   .project-body-content-description!= project.contentRendered
                   if project.link.url
                     .project-body-content-link
-                      a.button(href=project.link.url target="_blank")= project.link.text
+                      a.button.sub-outline-dark(href=project.link.url target="_blank")= project.link.text
                 - for figure in figures
                   if figure.title == project.figure
                     .col.project-body-figure
@@ -47,7 +49,7 @@ section.section.sub-intro
                         != figure.contentRendered
 
 section.section.sub-projects.sub-secondary
-  .section-content
+  .section-content.sub-wide
     .grid.wrapped.spaced: .grid-items
       - for project in projects
         if project.primary == false
@@ -56,29 +58,30 @@ section.section.sub-projects.sub-secondary
               .project-header
                 if project.title_logo
                   img.project-header-logo(src="images/projects/logos/" + project.title_logo)
-                  h2.project-header-title.state-hidden= project.title
+                  h2.h3.project-header-title.state-hidden= project.title
                 else
-                  h2.project-header-title= project.title
-                h3.project-header-role= project.role
+                  h2.h3.project-header-title= project.title
+                h3.h4.project-header-role= project.role
               .project-body
                 .project-body-content
                   .project-body-content-description!= project.contentRendered
                   if project.link.url
                     .project-body-content-link
-                      a.button(href=project.link.url target="_blank")= project.link.text
+                      a.button.sub-outline-light(href=project.link.url target="_blank")= project.link.text
 
 footer.section.sub-footer
   .section-content
-    nav
-      ul
-        li: a(href="http://twitter.com/kellytdesign" target="_blank") Twitter
-        li: a(href="http://dribbble.com/kellytdesign" target="_blank") Dribbble
-        li: a(href="https://www.linkedin.com/pub/kelly-tomlinson/13/453/3a9" target="_blank") Linkedin
-        li: a(href="http://www.rdio.com/people/kellytdesign/" target="_blank") Rdio
-        li: a(href="http://instagram.com/kellytdesign" target="_blank") Instagram
+    ul.social
+      .grid.wrapped.spaced: .grid-items
+        li.col: a.social-link.sub-twitter(href="http://twitter.com/kellytdesign" target="_blank") Twitter
+        li.col: a.social-link.sub-dribbble(href="http://dribbble.com/kellytdesign" target="_blank") Dribbble
+        li.col: a.social-link.sub-linkedin(href="https://www.linkedin.com/pub/kelly-tomlinson/13/453/3a9" target="_blank") Linkedin
+        li.col: a.social-link.sub-rdio(href="http://www.rdio.com/people/kellytdesign/" target="_blank") Rdio
+        li.col: a.social-link.sub-instagram(href="http://instagram.com/kellytdesign" target="_blank") Instagram
     hr
-    p 
-      | This was designed solely 40,000 feet up in the air flying coast to coast
-      | across fourteen days. It came to life through the amazing dev skills of Rob LaFeve. 
+    .section-content.sub-narrow
+      p 
+        | This was designed solely 40,000 feet up in the air flying coast to coast
+        | across fourteen days. It came to life through the amazing dev skills of Rob LaFeve. 
 
-    p ©2014 Kelly Tomlinson // KELLYTDESIGN, LLC.
+      p ©2014 Kelly Tomlinson // KELLYTDESIGN, LLC.

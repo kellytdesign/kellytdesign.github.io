@@ -1,13 +1,16 @@
 .project
+
   &.sub-primary
     @extend .nest-1
     color black-tint-3
+
     .section.sub-project:nth-child(odd) &
-      figure
-        margin-right -50%
+      figure:not(.sub-chaat20)
+        margin-right -60%
         img
           width 100%
-          max-width 600px
+          max-width 800px
+
     .section.sub-project:nth-child(even) &
       .grid-items
         direction rtl
@@ -16,14 +19,16 @@
         
       .project-body-figure
         text-align right
-      figure
-        margin-left -50%
-        img
-          width 100%
-          max-width 600px
+        figure
+          margin-left -60%
+          img
+            width 100%
+            max-width 800px
         
     .project-header
-      null
+      @media (max-width: 768px)
+        text-align left
+
     .project-body-content
       @extend .nest-3
       @extend .pad-b-1
@@ -33,6 +38,13 @@
     .col
       @media (max-width: 768px)
         display block
+        
+  &.sub-secondary
+    @extend .nest-3, .pad-3
+
+    .project-header-logo
+      max-width 14em
+      max-height 7em
       
 .project-header
   text-align center
@@ -54,4 +66,4 @@
 .project-body-figure
   text-align center
   vertical-align bottom
-  line-height 0    
+  line-height 0

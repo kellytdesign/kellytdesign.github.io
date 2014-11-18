@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>rdio</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-712.000000, -7047.000000)" fill="#FFFFFF">
+            <g id="social" sketch:type="MSLayerGroup" transform="translate(292.000000, 7047.000000)">
+                <path d="M447,0 C432.087,0 420,12.087 420,27 C420,41.913 432.087,54 447,54 C461.913,54 474,41.913 474,27 C474,12.087 461.913,0 447,0 L447,0 Z M458.839696,24.8998524 C458.926965,25.5865789 458.97149,26.2878392 458.97149,27 C458.97149,35.8366072 452.038079,43 443.483964,43 C434.933411,43 428,35.838424 428,27 C428,18.161576 434.935192,11 443.483964,11 C444.714631,11 445.906116,11.1562394 447.053076,11.4360168 L447.053076,20.5469513 C445.240024,19.8711252 443.012,19.9710458 440.91577,21.0029522 C437.124033,22.8687408 435.204122,27.0672193 436.623574,30.3791302 C438.043027,33.692858 442.267545,34.8646531 446.057501,32.9988645 C448.668438,31.712615 450.973045,28.6168957 450.973045,24.7345294 L450.973045,12.9911434 C451.298967,13.1782673 451.615984,13.3762916 451.925877,13.5852163 C454.86986,15.4728057 459.24042,17.996253 464.350092,18.2633133 C466.335901,18.3650505 463.564674,23.4737141 458.839696,24.8998524 L458.839696,24.8998524 Z" id="rdio" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>linkedin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-572.000000, -7047.000000)" fill="#FFFFFF">
+            <g id="social" sketch:type="MSLayerGroup" transform="translate(292.000000, 7047.000000)">
+                <path d="M307,0 C292.087,0 280,12.087 280,27 C280,41.913 292.087,54 307,54 C321.913,54 334,41.913 334,27 C334,12.087 321.913,0 307,0 L307,0 Z M300,41 L295,41 L295,22 L300,22 L300,41 L300,41 Z M298.5,20 C296.56484,20 295,18.4328358 295,16.5009498 C295,14.5652646 296.56484,13 298.5,13 C300.43516,13 302,14.5652646 302,16.5009498 C302,18.4347354 300.43516,20 298.5,20 L298.5,20 Z M319,41 L313.666064,41 L313.666064,29.4656008 C313.666064,28.9224806 313.130681,28.0332364 312.750848,27.8178295 C312.253448,27.5306202 311.072349,27.5085271 310.529731,27.7718023 L308.330319,28.8488372 L308.330319,41 L303,41 L303,22 L308.330319,22 L308.330319,22.8358527 C310.442912,21.8545543 313.371241,21.9502907 315.357224,23.0825581 C317.468008,24.2866279 319,26.9709302 319,29.4656008 L319,41 L319,41 Z" id="linkedin" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
