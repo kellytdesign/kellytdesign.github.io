@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
-    <title>linkedin</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-572.000000, -7047.000000)" fill="#FFFFFF">
-            <g id="social" sketch:type="MSLayerGroup" transform="translate(292.000000, 7047.000000)">
-                <path d="M307,0 C292.087,0 280,12.087 280,27 C280,41.913 292.087,54 307,54 C321.913,54 334,41.913 334,27 C334,12.087 321.913,0 307,0 L307,0 Z M300,41 L295,41 L295,22 L300,22 L300,41 L300,41 Z M298.5,20 C296.56484,20 295,18.4328358 295,16.5009498 C295,14.5652646 296.56484,13 298.5,13 C300.43516,13 302,14.5652646 302,16.5009498 C302,18.4347354 300.43516,20 298.5,20 L298.5,20 Z M319,41 L313.666064,41 L313.666064,29.4656008 C313.666064,28.9224806 313.130681,28.0332364 312.750848,27.8178295 C312.253448,27.5306202 311.072349,27.5085271 310.529731,27.7718023 L308.330319,28.8488372 L308.330319,41 L303,41 L303,22 L308.330319,22 L308.330319,22.8358527 C310.442912,21.8545543 313.371241,21.9502907 315.357224,23.0825581 C317.468008,24.2866279 319,26.9709302 319,29.4656008 L319,41 L319,41 Z" id="linkedin" sketch:type="MSShapeGroup"></path>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"><title>linkedin</title><desc>Created with Sketch.</desc><path d="M27 0c-14.913 0-27 12.087-27 27s12.087 27 27 27 27-12.087 27-27-12.087-27-27-27zm-7 41h-5v-19h5v19zm-1.5-21c-1.935 0-3.5-1.567-3.5-3.499 0-1.936 1.565-3.501 3.5-3.501s3.5 1.565 3.5 3.501c0 1.934-1.565 3.499-3.5 3.499zm20.5 21h-5.334v-11.534c0-.543-.535-1.432-.915-1.648-.497-.287-1.678-.309-2.221-.046l-2.199 1.077v12.151h-5.33v-19h5.33v.836c2.113-.981 5.041-.886 7.027.247 2.111 1.204 3.643 3.888 3.643 6.383v11.534z" sketch:type="MSShapeGroup" fill="#fff"/></svg>
