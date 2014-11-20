@@ -30,7 +30,7 @@ section.section.sub-intro
           article.project.sub-primary
             .project-header
               if project.title_logo
-                img.project-header-logo(src="images/projects/logos/" + project.title_logo, alt= project.title)
+                img.project-header-logo(src=site.url + "images/projects/logos/" + project.title_logo, alt= project.title)
                 h2.project-header-title.state-hidden= project.title
               else
                 h2.project-header-title= project.title
@@ -41,7 +41,7 @@ section.section.sub-intro
                   .project-body-content-description!= project.contentRendered
                   if project.link.url
                     .project-body-content-link
-                      a.button.sub-outline-dark(href=project.link.url target="_blank")= project.link.text
+                      a.button.sub-outline-dark(href=project.link.url target=project.link.target)= project.link.text
                 - for figure in figures
                   if figure.title == project.figure
                     .col.project-body-figure
@@ -57,7 +57,7 @@ section.section.sub-projects.sub-secondary
             .project.sub-secondary
               .project-header
                 if project.title_logo
-                  img.project-header-logo(src="images/projects/logos/" + project.title_logo)
+                  img.project-header-logo(src=site.url + "images/projects/logos/" + project.title_logo)
                   h2.h3.project-header-title.state-hidden= project.title
                 else
                   h2.h3.project-header-title= project.title

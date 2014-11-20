@@ -7,6 +7,7 @@ order: 4
 link:
   text: Launch Website
   url: http://2013.bigkansascity.co
+  target: _blank
 figure: bigkc
 ---
 

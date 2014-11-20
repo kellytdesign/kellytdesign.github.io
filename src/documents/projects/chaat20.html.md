@@ -8,6 +8,7 @@ order: 3
 link:
   text: Launch Website
   url: http://chaat20.com
+  target: _blank
 figure: chaat20
 ---
 

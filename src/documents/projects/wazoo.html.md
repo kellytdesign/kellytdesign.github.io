@@ -8,6 +8,7 @@ order: 2
 link:
   text: Launch Website
   url: http://getwazoo.com
+  target: _blank
 figure: wazoo
 ---
 

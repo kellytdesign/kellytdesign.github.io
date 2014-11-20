@@ -9,6 +9,7 @@ outPath: null
 link:
   text: Launch Website
   url: http://kc.coffeedesign.org
+  target: _blank
 figure: coffeedesign
 ---
 

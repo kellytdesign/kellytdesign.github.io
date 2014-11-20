@@ -7,6 +7,7 @@ order: 5
 link:
   text: Launch Website
   url: http://lovelylittleinvitations.com/
+  target: _blank
 ---
 
 I worked with a Phoenix based startup to help launch a user-customizable stationary line for weddings, holidays, and announcements. 

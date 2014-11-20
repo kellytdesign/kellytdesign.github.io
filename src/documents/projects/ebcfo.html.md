@@ -8,6 +8,7 @@ order: 5
 link:
   text: Launch Website
   url: http://ebcfo.com
+  target: _blank
 figure: ebcfo
 ---
 

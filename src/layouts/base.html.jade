@@ -5,9 +5,9 @@ html(lang="en")
     meta(name="viewport", content="initial-scale=1.0, user-scalable=no, width=device-width")
     title= document.title
     != getBlock("meta").toHTML()
-    != getBlock("styles").add(site.styles).toHTML()
+    != getBlock("styles").add(site.preparedFilesPath(site.url, site.styles)).toHTML()
 
   body
     != content
-    != getBlock("scripts").add(site.scripts).toHTML()
+    != getBlock("scripts").add(site.preparedFilesPath(site.url, site.scripts)).toHTML()
   

@@ -4,16 +4,21 @@
 # Define the DocPad Configuration
 docpadConfig = {
 
+
   templateData:
     site:
+      url: 'http://kellytdesign.github.io/dotcom/'
       styles: [
-        '/styles/index.css'
+        'styles/index.css'
       ]
       scripts: [
-        '/vendor/jquery.js',
-        '/vendor/scrollMonitor.js',
-        '/scripts/functions.js'
+        'scripts/functions.js'
       ]
+
+      preparedFilesPath: (url, array) ->
+        scripts_string = ''
+        for file in array
+          scripts_string = url + file
 
   watchOptions:
     catchupDelay: 0
@@ -28,17 +33,22 @@ docpadConfig = {
       stylusOptions:
         compress: false
 
-  environments:  # default
-    production:
+  environments:
+
+    static:
+
+      templateData:
+        site:
+          url: 'http://kellytdesign.github.io/dotcom/'
+
       plugins:
         stylus:
           stylusOptions:
             compress: true
 
-    development:  # default
+    development:
 
-      # Plugins
-      plugins:  # example
+      plugins:
         livereload:
           styleBlock: " "
 
@@ -47,6 +57,10 @@ docpadConfig = {
 
       # Listen to port 9005 on the development environment
       port: 4000  # example
+
+      templateData:
+          site:
+              url: 'http://localhost:4000/'
 
   collections:
     projects: ->
