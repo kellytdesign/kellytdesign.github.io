@@ -1,0 +1,31 @@
+.stickies
+  
+  position relative
+  @media (max-width: 768px)
+    height 25em
+  .sticky
+    position absolute
+    top 0
+    left 0
+    @media (max-width: 768px)
+      top 75%
+    width 16em
+    &.sub-red
+      transform translate(-6em, -14em) rotate(-10deg)
+    &.sub-green
+      transform translate(6em, -18em) rotate(5deg)
+    &.sub-yellow
+      transform translate(2em, -10em) rotate(-2deg)
+
+
+.sticky
+  @extend .pad-3
+  box-shadow 0 0.5em 0.5em black
+  img
+    width 100%
+  &.sub-red
+    background red
+  &.sub-green
+    background green
+  &.sub-yellow
+    background yellow
