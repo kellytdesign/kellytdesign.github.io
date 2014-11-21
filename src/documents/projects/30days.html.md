@@ -5,8 +5,8 @@ role: Lettering, Typography, Design
 primary: true
 order: 6
 link:
-  text: Launch Website
-  url: /30days
+  text: View Project
+  url: 30days
 figure: 30days
 ---
 
