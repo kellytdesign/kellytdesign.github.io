@@ -19,8 +19,8 @@ section.section.sub-intro
     .grid.height-full.align-middle: .grid-items: .col
       h1 
         | I’m Kelly Tomlinson.
-        p: small I create engaging experiences for web, ios, brands, and events. 
-      p: a.button.sub-solid.sub-large(href='mailto:hi@kellytdesign.com') hi@kellytdesign.com
+        p: small I design engaging experiences for web, iOS, brands, products, & events.
+      p: a.button.sub-solid.sub-large(href='mailto:hi@kellytdesign.com') <span class="lowercase">hi</span>@kellytdesign.com
 
 .projects
   - for project in projects
@@ -67,7 +67,7 @@ section.section.sub-projects.sub-secondary
                   .project-body-content-description!= project.contentRendered
                   if project.link.url
                     .project-body-content-link
-                      a.button.sub-outline-light(href=project.link.url target="_blank")= project.link.text
+                      a.button.sub-outline-dark(href=project.link.url target="_blank")= project.link.text
 
 footer.section.sub-footer
   .section-content

@@ -10,4 +10,4 @@ link:
   target: _blank
 ---
 
-Through Cremalab, I worked with a KC based startup to shape an iOS app that essentially acts as a community board for college campuses.
+Through [Cremalab](http://cremalab.com), I worked with a KC based startup to shape an iOS app that essentially acts as a community board for college campuses.

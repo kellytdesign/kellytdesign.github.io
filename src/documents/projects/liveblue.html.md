@@ -10,4 +10,4 @@ link:
   target: _blank
 ---
 
-Through Cremalab, I worked with Blue Cross Blue Shield Kansas City to create an iOS app that allows users to discover nearby health-oriented locations.
+Through [Cremalab](http://cremalab.com), I worked with Blue Cross Blue Shield Kansas City to create an iOS app that allows users to discover nearby health-oriented locations.

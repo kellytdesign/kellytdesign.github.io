@@ -10,4 +10,4 @@ link:
   target: _blank
 ---
 
-Through Cremalab, I had the pleasure to work with neighbor.ly, a Kansas City based startup who provides a platform to raise money for civic movements.
+Through [Cremalab](http://cremalab.com), I had the pleasure to work with neighbor.ly, a Kansas City based startup who provides a platform to raise money for civic movements.
