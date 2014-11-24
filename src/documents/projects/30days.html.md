@@ -6,7 +6,7 @@ primary: true
 order: 6
 link:
   text: View Project
-  url: 30days
+  url: thirty_days
 figure: 30days
 ---
 

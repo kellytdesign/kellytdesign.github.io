@@ -7,7 +7,7 @@ html(lang="en")
     != getBlock("meta").toHTML()
     != getBlock("styles").add(site.preparedFilesPath(site.url, site.styles)).toHTML()
 
-  body
+  body(class=document.slug)
     != content
     != getBlock("scripts").add(site.preparedFilesPath(site.url, site.scripts)).toHTML()
   

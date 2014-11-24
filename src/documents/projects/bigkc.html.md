@@ -1,6 +1,7 @@
 ---
 title: Big Kansas City
 slug: bigkc
+title_logo: logo-bigkc.svg
 role: Branding, Web Design, Print Design
 primary: true
 order: 4

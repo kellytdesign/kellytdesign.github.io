@@ -71,9 +71,13 @@
     color white
     text-align center
   &.sub-30days-tiles
-    background black-tint-1
-    @extend .nest-6, .pad-6
+    background black
+    @extend .nest-6
+    padding 0
+    .grid.wrapped.spaced
+      margin 0 !important
     .col
+      padding 1px !important
       width (100/4)%
       @media (max-width: 960px)
         width (100/3)%
