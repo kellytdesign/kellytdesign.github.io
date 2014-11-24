@@ -17,4 +17,4 @@ In January 2014, I founded and co-launched Coffee & Design in Kansas City on a m
 
 To continue community building, C&D powers Design On Tap, an informal gathering of designers over drinks; as well as a virtual co-working space to help foster connections and interactions.
 
-Currently, I’m working on bringing Coffee & Design to other cities across the nation.
+Currently, I’m working on bringing Coffee & Design to other cities across the country.
