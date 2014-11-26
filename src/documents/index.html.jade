@@ -20,7 +20,11 @@ section.section.sub-intro
       h1 
         | I’m Kelly Tomlinson.
         p: small I design engaging experiences for web, iOS, brands, products, & events.
-      p: a.button.sub-solid.sub-large(href='mailto:hi@kellytdesign.com?subject=Hello!') <span class="lowercase">hi</span>@kellytdesign.com
+      a.button.sub-solid.sub-large(href="mailto:hi@kellytdesign.com?subject=Hello!")
+        .grid.spaced.align-middle: .grid-items
+          .col
+            img(src=site.url + "images/icon-envelope.svg") 
+          .col h<span class="lowercase">i</span>@kellytdesign.com
 
 .projects
   - for project in projects
