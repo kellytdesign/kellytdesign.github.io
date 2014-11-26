@@ -12,43 +12,10 @@
     width 16em
     &.sub-red
       transform translate(-6em, -14em) rotate(-10deg)
-      animation sticky-red 8s infinite cubic-bezier(0.56, -0.52, 0.42, 1.43)
     &.sub-green
       transform translate(6em, -18em) rotate(5deg)
-      animation sticky-green 8s infinite cubic-bezier(0.56, -0.52, 0.42, 1.43)
     &.sub-yellow
       transform translate(2em, -10em) rotate(-2deg)
-      animation sticky-yellow 8s infinite cubic-bezier(0.56, -0.52, 0.42, 1.43)
-      
-@keyframes sticky-red
-  0%, 95%
-    transform translate(-6em, -14em) rotate(-10deg)
-  96%
-    transform translate(-7em, -15em) rotate(0deg)
-  98%
-    transform translate(-6em, -14em) rotate(-15deg)
-  100%
-    transform translate(-6em, -14em) rotate(-10deg)
-
-@keyframes sticky-green
-  0%, 95%
-    transform translate(6em, -18em) rotate(5deg)
-  96%
-    transform translate(6em, -18em) rotate(-10deg)
-  98%
-    transform translate(6em, -18em) rotate(10deg)
-  100%
-    transform translate(6em, -18em) rotate(5deg)
-    
-@keyframes sticky-yellow
-  0%, 95%
-    transform translate(2em, -10em) rotate(-2deg)
-  96%
-    transform translate(2em, -10em) rotate(0deg) scale(1.2)
-  98%
-    transform translate(2em, -10em) rotate(-4deg)
-  100%
-    transform translate(2em, -10em) rotate(-2deg)
 
 .sticky
   @extend .pad-3
