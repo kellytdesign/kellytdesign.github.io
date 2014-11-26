@@ -1,22 +1,25 @@
 .social
+  @extend .nest-2
   display block
   padding 0
   max-width 500px
   margin 0 auto
   
-  .col
-    width (100/5)%
-    @media (max-width: 640px)
-      width (100/3)%
-  
 .social-link
   display block
-  font-size 0
+  width 2.25em
   background-size cover
+  border-radius 500px
+  padding 0.15em
+  border 3px solid transparent
+  background-repeat no-repeat
   &:after
     content ''
     padding-top 100%
     display block
+  &:hover
+  &:active
+    background-color rgba(0,0,0, 0.15)
     
   &.sub-twitter
     background-image url(img_dir + 'icon-twitter.svg')
