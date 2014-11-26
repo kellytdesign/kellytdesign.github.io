@@ -1,14 +1,14 @@
 ---
-title: "30 Days"
+title: "Lettering, Stickies, & Thirty Days"
 layout: base
-body-class: 'thirty-days'
 ---
 
 section.section.sub-30days-intro
-  .section-content
+  .section-content.sub-narrow
     .grid.height-full.align-middle: .grid-items: .col
-      h1 
-        | 30 Days of Lettering
+      h1=document.title
+      p Handlettering has always been one of those “one day” things for me. You know what I’m talking about: one of those things that you’re both so in awe of and yet so envious of, and you tell yourself that “one day” you’ll do something about it.
+      p For years, I sucked at doing something about it. No amount of new pens, sketchbooks, or bursts of inspiration ever translated to ink on paper.
 
 section.section.sub-30days-tiles
   .grid.wrapped.spaced: .grid-items
@@ -42,3 +42,7 @@ section.section.sub-30days-tiles
     .col: img(src=site.url + "images/30days/28.jpg")
     .col: img(src=site.url + "images/30days/29.jpg")
     .col: img(src=site.url + "images/30days/30.jpg")
+section.section.sub-30days-intro
+  .section-content.sub-narrow
+    a.button.sub-outline-dark(href=site.url) kellytdesign.com
+  

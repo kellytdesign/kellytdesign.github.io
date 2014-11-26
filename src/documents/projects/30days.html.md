@@ -1,12 +1,12 @@
 ---
-title: Lettering, Stickies, & 30 Days
+title: Lettering, Stickies, & Thirty Days
 slug: 30days
 role: Lettering, Typography, Design
 primary: true
 order: 6
 link:
   text: View Project
-  url: thirty_days
+  url: lettering_stickies_and_thirty_days
 figure: 30days
 ---
 
