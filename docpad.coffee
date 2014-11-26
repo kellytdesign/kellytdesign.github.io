@@ -12,6 +12,8 @@ docpadConfig = {
         'styles/index.css'
       ]
       scripts: [
+        'vendor/jquery.js'
+        'vendor/waypoints.min.js'
         'scripts/functions.js'
       ]
 

@@ -24,10 +24,23 @@
           img
             width 100%
             max-width 800px
-        
+
     .project-header
       @media (max-width: 768px)
         text-align left
+        
+    .project-body-figure
+      transform translate3d(0,0,0)
+      figure
+        transition all 8s ease-out
+        transform scale(0.95)
+        transform-origin 50% 100%
+        opacity 0.75
+      &.active
+        figure
+          transform scale(1)
+          opacity 1
+
 
     .project-body-content
       @extend .nest-3

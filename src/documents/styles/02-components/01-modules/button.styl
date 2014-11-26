@@ -1,6 +1,7 @@
 .button
   @extend .pad-t-5, .pad-r-3, .pad-b-5, .pad-l-3
   @extend .nest-4
+  transition all 0.15s ease-in-out
   position relative
   display inline-block
   border 3px solid
@@ -25,19 +26,23 @@
       border-radius inherit
       border 3px solid
       color inherit
+    &:before
+      transition inherit
+      content ''
+      display block
+      position absolute
+      top -6px
+      right -6px
+      bottom -6px
+      left -6px
+      background rgba(0,0,0, 0)
+      z-index -2
+      border-radius inherit
     &:hover
     &:active
       &:before
-        content ''
-        display block
-        position absolute
-        top -6px
-        right -6px
-        bottom -6px
-        left -6px
         background rgba(0,0,0, 0.15)
-        z-index -2
-        border-radius inherit
+
   
   &.sub-solid
     background green
@@ -48,4 +53,4 @@
       box-shadow 0 0 0 3px rgba(green, 0.25)
     
   &.sub-large
-    font-size 1.2em
+    font-size 1em
