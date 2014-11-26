@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 html(lang="en")
   head
+    title= document.title
     meta(charset="UTF-8")
     meta(name="viewport", content="initial-scale=1.0, user-scalable=no, width=device-width")
-    title= document.title
+    link(rel="shortcut icon" type="image/x-icon" href=site.url + "images/favicon.png")
     != getBlock("meta").toHTML()
     != getBlock("styles").add(site.preparedFilesPath(site.url, site.styles)).toHTML()
 
