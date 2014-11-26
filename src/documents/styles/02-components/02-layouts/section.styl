@@ -70,9 +70,21 @@
     @extend .nest-3
     text-align center
   &.sub-30days-tiles
-    img
-      display block
-      transition all 0.25s ease-in-out
+    padding 0
+    .grid.wrapped.spaced
+      margin 0 !important
+    .col
+      padding 1px !important
+      width (100/4)%
+      @media (max-width: 960px)
+        width (100/3)%
+      @media (max-width: 480px)
+        width (100/2)%
+      @media (max-width: 320px)
+        width (100/1)%
+      img
+        display block
+        transition all 0.25s ease-in-out
     
 .section-content
   max-width 860px
