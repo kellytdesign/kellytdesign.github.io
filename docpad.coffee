@@ -41,7 +41,7 @@ docpadConfig = {
 
       templateData:
         site:
-          url: 'http://kellytdesign.github.io/dotcom/'
+          url: 'http://kellytdesign.com/'
 
       plugins:
         stylus:
