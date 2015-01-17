@@ -8,3 +8,8 @@ $ ->
   ),
     offset: "100%"
 
+  # Set current year in footer
+  year = new Date().getFullYear()
+  currentYear = document.querySelector(".currentYear")
+  currentYear.innerHTML = "©#{year} "
+
