@@ -14,7 +14,7 @@
     font-size 6vw
 
 .section
-  @extend .pad-1, .nest-1
+  @extend .pad-1, .nest-2
   &.sub-megaHello
     color green
     width 100vw
@@ -28,11 +28,13 @@
       @media (min-width: 768px)
         animation hello-text 0.25s 1.5s ease-in-out both
   &.sub-intro
-    min-height 60vh
+    height 60vh
     overflow hidden
     background black-tint-3
     text-align center
     vertical-align middle
+    display table
+    width 100%
   &.sub-project
     padding-bottom 0
     overflow hidden
