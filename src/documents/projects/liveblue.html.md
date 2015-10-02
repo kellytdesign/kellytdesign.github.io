@@ -3,7 +3,7 @@ title: LiveBlue
 title_logo: logo-liveblue.svg
 role: UX, UI, iOS Design
 primary: false
-order: 3
+order: 2
 link:
   text: Launch Website
   url: https://itunes.apple.com/us/app/live-blue/id680653670
