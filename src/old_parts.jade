@@ -1,0 +1,25 @@
+.projects
+  - for project in projects
+    if project.primary == true
+      section.section.sub-project(class= "sub-" + project.slug)
+        .section-content
+          article.project.sub-primary
+            .project-header
+              if project.title_logo
+                img.project-header-logo(src=site.url + "images/projects/logos/" + project.title_logo, alt= project.title)
+                h2.project-header-title.state-hidden= project.title
+              else
+                h2.project-header-title= project.title
+            .project-body
+              .grid.auto.spaced: .grid-items
+                .col.project-body-content
+                  h3.project-body-content-role= project.role
+                  .project-body-content-description!= project.contentRendered
+                  if project.link.url
+                    .project-body-content-link
+                      a.button.sub-outline-dark(href=project.link.url target=project.link.target)= project.link.text
+                - for figure in figures
+                  if figure.title == project.figure
+                    .col.project-body-figure
+                      figure(class= "sub-" + figure.title)
+                        != figure.contentRendered

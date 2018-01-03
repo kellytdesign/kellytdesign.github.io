@@ -17,63 +17,47 @@ section.section.sub-megaHello
 section.section.sub-intro
   .section-content
     .grid.height-full.align-middle: .grid-items: .col
-      h1 
-        | I’m Kelly Tomlinson.
-        p I design experiences and products for web, iOS, and events.
-      .constrain.-small
-        p I've had the honor to speak at the <a href=http://matchcanboom.com>2015 Gas Can Creative Conference</a>, <a href=http://www.middleofthemapfest.com/forum>2015 Middle of the Map Fest Forum</a>, and the <a href=http://www.upsummit.co>2014 UP Global Summit</a>.
+      h1 I’m Kelly Tomlinson.
+      p With degrees in both design and hospitality management,  I believe in designing holistic experiences that cross through, around, and in between every channel, device, and physical touch.
+      br
       a.button.sub-solid.sub-large(href="mailto:hi@kellytdesign.com?subject=Hello!")
         .grid.spaced.align-middle: .grid-items
           .col
-            img(src=site.url + "images/icon-envelope.svg") 
+            img(src=site.url + "images/icon-envelope.svg")
           .col h<span class="lowercase">i</span>@kellytdesign.com
 
-.projects
-  - for project in projects
-    if project.primary == true
-      section.section.sub-project(class= "sub-" + project.slug)
-        .section-content
-          article.project.sub-primary
-            .project-header
-              if project.title_logo
-                img.project-header-logo(src=site.url + "images/projects/logos/" + project.title_logo, alt= project.title)
-                h2.project-header-title.state-hidden= project.title
-              else
-                h2.project-header-title= project.title
-            .project-body
-              .grid.auto.spaced: .grid-items
-                .col.project-body-content
-                  h3.project-body-content-role= project.role
-                  .project-body-content-description!= project.contentRendered
-                  if project.link.url
-                    .project-body-content-link
-                      a.button.sub-outline-dark(href=project.link.url target=project.link.target)= project.link.text
-                - for figure in figures
-                  if figure.title == project.figure
-                    .col.project-body-figure
-                      figure(class= "sub-" + figure.title)
-                        != figure.contentRendered
 
 section.section.sub-projects.sub-secondary
   .section-content.sub-wide
+    h1.align-center Folks I've worked with
+    br
+    br
     .grid.wrapped.spaced: .grid-items
-      - for project in projects
-        if project.primary == false
-          .col
-            .project.sub-secondary
-              .project-header
-                if project.title_logo
-                  img.project-header-logo(src=site.url + "images/projects/logos/" + project.title_logo)
-                  h2.h3.project-header-title.state-hidden= project.title
-                else
-                  h2.h3.project-header-title= project.title
-                h3.h4.project-header-role= project.role
-              .project-body
-                .project-body-content
-                  .project-body-content-description!= project.contentRendered
-                  if project.link.url
-                    .project-body-content-link
-                      a.button.sub-outline-dark(href=project.link.url target="_blank")= project.link.text
+      .col.pad-btm
+        img(src=site.url + "images/logos/lincoln-logo.svg")
+      .col.pad-btm
+        img(src=site.url + "images/logos/ford-logo.svg")
+      .col.pad-btm
+        img(src=site.url + "images/logos/qt-logo.svg")
+      .col.pad-btm
+        img(src=site.url + "images/logos/dsg-logo.svg")
+      .col.pad-btm
+        img(src=site.url + "images/logos/liveblue-logo.svg")
+      .col.pad-btm
+        img(src=site.url + "images/logos/1mc-logo.svg")
+      .col.pad-btm
+        img(src=site.url + "images/logos/swappa-logo.svg")
+      .col.pad-btm
+        img(src=site.url + "images/logos/usc-logo.svg")
+      .col.pad-btm
+        img(src=site.url + "images/logos/zaarly-logo.svg")
+
+section.section.sub-intro
+  .section-content
+    .grid.height-full.align-middle: .grid-items: .col
+      h1 Honorable Mentions
+      p In 2014 I founded Coffee & Design, a not-for-profit on a mission to inspire, connect, and grow the professional design community in Kansas City. I have been a co-chair of KC Design Week since 2016, serving on the committee since 2015. Previously my involvement was in the KC startup and entrepreneur community with a Startup Weekend win in 2012. I’ve had the honor to speak at the 2015 Gas Can Creative Conference,  2015 Middle of the Map Fest Forum, and the 2014 UP Global Summit. In 2017 I was named Ink Magazine’s 30 under 30.
+
 
 footer.section.sub-footer
   .section-content
@@ -84,11 +68,13 @@ footer.section.sub-footer
         li.col: a.social-link.sub-linkedin(href="https://www.linkedin.com/pub/kelly-tomlinson/13/453/3a9" target="_blank"): span(class='hidden') Linkedin
         li.col: a.social-link.sub-rdio(href="http://www.rdio.com/people/kellytdesign/" target="_blank"): span(class='hidden') Rdio
         li.col: a.social-link.sub-instagram(href="http://instagram.com/kellytdesign" target="_blank"): span(class='hidden') Instagram
+    br
     hr
+    br
     .section-content.sub-narrow
-      p 
+      p
         | This was designed solely 40,000 feet up in the air flying coast to coast
-        | across fourteen days. It came to life through the amazing dev skills of <a href=https://github.com/roblafeve>Rob LaFeve</a>. 
+        | across fourteen days. It came to life through the amazing dev skills of <a href=https://github.com/roblafeve>Rob LaFeve</a>.
 
       p
         span.currentYear ©
