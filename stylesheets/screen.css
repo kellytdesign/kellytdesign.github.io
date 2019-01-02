@@ -857,7 +857,7 @@ svg {
   color: white;
   text-decoration: none;
   padding: 15px 30px;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 60px;
   margin: 4px 0;
   transition: box-shadow 0.2s ease;
@@ -872,7 +872,7 @@ svg {
   color: #39BB9D;
   text-decoration: none;
   padding: 15px 30px;
-  border: 1px solid #39BB9D;
+  border: 2px solid #39BB9D;
   border-radius: 60px;
   margin: 4px 0;
   transition: box-shadow 0.2s ease;
