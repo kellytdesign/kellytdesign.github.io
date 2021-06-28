@@ -720,14 +720,14 @@ h3, h3 a {
 
 h4, h4 a {
   font-family: 'Montserrat-Bold', sans-serif;
-  font-size: 90px;
-  font-size: 9rem;
+  font-size: 80px;
+  font-size: 8rem;
   text-decoration: none; }
 
 p {
   line-height: 1.6em;
   margin: 12px 0 12px;
-  font-weight: 200; }
+  font-weight: 300; }
 
 a {
   color: #2F9F85;
@@ -751,7 +751,7 @@ input {
 
 section {
   width: 60%;
-  margin: 10em auto;
+  margin: 6em auto;
   padding: 2em; }
 
 .clear {
