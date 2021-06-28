@@ -27,15 +27,16 @@ $text: #333333;
 @import 'jkr/jkr';
 
 html { font-size: 62.5%; }
-body { background: $site-bg; color: $text; @include paragraph; font-size: 16px; font-size: 1.6rem; -webkit-backface-visibility: hidden; }
+body { background: $site-bg; color: $text; @include paragraph; font-size: 16px; font-size: 1.6rem; text-align: center; -webkit-backface-visibility: hidden; }
 
 // background-image: linear-gradient(-135deg, #26333D 0%, #131B21 100%);
 
 // Type
-h1, h1 a { @include display; @include font-size(24); text-decoration: none; }
-h2, h4 { @include display; text-transform: uppercase; margin: 0; display: block;}
-h2, h2 a { line-height: 18px; @include font-size(14); @include displayBold; text-decoration: none; }
-h3, h3 a { @include font-size(18);line-height: 32px; text-decoration: none; color: $lc; }
+h1, h1 a { @include displayBold; @include font-size(40); font-weight: 700; text-decoration: none;}
+h2, h4 { @include display; margin: 0; display: block;}
+h2, h2 a { line-height: 18px; @include font-size(20); text-decoration: none; }
+h3, h3 a { @include font-size(18);line-height: 32px; text-decoration: none;}
+h4, h4 a { @include display; @include font-size(90); text-decoration: none; }
 
 p { line-height: 1.6em; margin: 12px 0 12px; font-weight: 200; }
 
@@ -58,6 +59,7 @@ input { outline: 0; }
 }
 
 // Utility
+section {width:60%; margin: 10em auto; padding: 2em;}
 
 //.clearfix { @include clearfix; }
 .clear { clear: both; }
@@ -312,7 +314,6 @@ svg { fill: currentColor; }
 
 // footer
 footer {
-	background: #444;
 	text-align: center;
 	padding: 6em 2em;
 	.social-links {
@@ -325,11 +326,11 @@ footer {
 	}
 	p {
 		@include font-size (12);
-		color: white;
+		color: #444;
 		opacity: .65;
 	}
 	a {
-		color: white;
+		color: #444;
 	}
 	hr {
 		width: 60%;
