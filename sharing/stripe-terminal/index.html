@@ -160,37 +160,27 @@
   /* ---- 05 approved (styled · node 21:147) ---- */
   .screen.ok{padding:0;}
   .screen.ok .close{position:absolute;top:30px;left:25px;color:#0d0d0d;z-index:3;}
-  .ok-group{position:absolute;top:95px;left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:6px;}
+  .ok-group{position:absolute;top:0;bottom:0;left:0;right:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;}
   .tickmark{width:62px;height:auto;display:block;}
   .tickmark .tk{fill:none;stroke:#0d0d0d;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:130;stroke-dashoffset:130;}
   .screen.active .tickmark{animation:pop .5s var(--spring) both;}
   .screen.active .tickmark .tk{animation:draw .5s var(--ease) .18s forwards;}
   .ok-text{display:flex;flex-direction:column;align-items:center;gap:14px;margin-top:8px;}
   .ok-title{font-weight:700;font-size:48px;color:#0d0d0d;line-height:1;letter-spacing:-.02em;}
-  .ok-amount{font-weight:500;font-size:32px;color:#0d0d0d;opacity:.7;line-height:1;}
   .screen.ok .foot{position:absolute;left:0;right:0;bottom:0;z-index:2;}
-  /* slide-in loyalty sheet (node 39:481) */
-  .ok-panel{position:absolute;inset:0;z-index:1;transform:translateY(100%);transition:transform .85s cubic-bezier(.22,1,.36,1);pointer-events:none;}
-  .ok-panel.slid{transform:translateY(0);}
-  .ok-sheet{position:absolute;left:50%;transform:translateX(-50%);bottom:-128px;width:912px;height:564px;border-radius:50%;background:#fff;}
-  .lo-content{position:absolute;top:404px;left:25px;width:380px;display:flex;flex-direction:column;align-items:center;gap:16px;}
-  .lo-welcome{font-weight:700;font-size:30px;line-height:1.25;color:#0d0d0d;text-align:center;}
+  /* shared loyalty ID card (also used on the join screen) */
   .lo-card{width:100%;height:50px;background:rgba(13,13,13,.05);border-radius:9px;display:flex;align-items:center;gap:12px;padding:0 13px;}
   .lo-id{flex:1;font-weight:400;font-size:16px;color:#0d0d0d;letter-spacing:.02em;}
   .lo-check{width:14px;height:auto;color:#1f9d55;}
-  .lo-actions{display:flex;gap:13px;width:100%;}
-  .lo-act{flex:1;border:1.5px solid #163a52;border-radius:11px;background:transparent;display:flex;flex-direction:column;align-items:center;gap:10px;padding:18px 8px 14px;transition:transform .25s var(--spring),background .25s var(--ease);}
-  .lo-act .ic{width:30px;height:30px;color:#163a52;}
-  .lo-act .lbl{font-weight:600;font-size:16px;color:#163a52;}
-  .lo-act.press{transform:scale(.97);background:rgba(22,58,82,.06);}
 
   /* ---- 06 join rewards (styled · node 21:161) ---- */
   .screen.join{padding:0;}
   .screen.join .close{position:absolute;top:30px;left:25px;color:#0d0d0d;z-index:3;}
-  .screen.join .sheet{position:absolute;left:0;right:0;top:300px;bottom:0;background:#fff;z-index:0;}
-  .screen.join .sheet-top{position:absolute;left:50%;transform:translateX(-50%);bottom:15px;width:912px;height:564px;border-radius:50%;background:#fff;z-index:0;}
-  .gift-circle{position:absolute;left:50%;margin-left:-65px;top:115px;width:130px;height:130px;border-radius:50%;background:#fff;box-shadow:0 12px 36px -10px rgba(22,58,82,.18);display:flex;align-items:center;justify-content:center;z-index:2;transform-origin:center;}
-  .gift-circle svg{width:66px;height:66px;color:#0d0d0d;overflow:visible;}
+  .join-thanks{position:absolute;top:88px;left:0;right:0;text-align:center;font-weight:700;font-size:32px;color:#0d0d0d;line-height:1.3;letter-spacing:-.02em;z-index:2;}
+  .screen.join .sheet{position:absolute;left:0;right:0;top:330px;bottom:0;background:#fff;z-index:0;}
+  .screen.join .sheet-top{position:absolute;left:50%;transform:translateX(-50%);bottom:-45px;width:912px;height:564px;border-radius:50%;background:#fff;z-index:0;}
+  .gift-circle{position:absolute;left:50%;margin-left:-65px;top:172px;width:130px;height:130px;border-radius:50%;background:#fff;border:4px solid #0d0d0d;display:flex;align-items:center;justify-content:center;z-index:2;transform-origin:center;}
+  .gift-circle svg{width:58px;height:58px;color:#0d0d0d;overflow:visible;}
   /* gift draws itself on, part by part */
   .g-body{stroke-dasharray:34;stroke-dashoffset:34;}
   .g-lid{stroke-dasharray:46;stroke-dashoffset:46;}
@@ -200,7 +190,7 @@
   .screen.join.active .g-lid{animation:draw .4s var(--ease) .35s forwards;}
   .screen.join.active .g-ribbon{animation:draw .3s var(--ease) .62s forwards;}
   .screen.join.active .g-bow{animation:draw .5s var(--spring) .8s forwards;}
-  .join-content{position:absolute;top:282px;left:25px;width:380px;z-index:1;display:flex;flex-direction:column;align-items:center;gap:38px;}
+  .join-content{position:absolute;top:355px;left:25px;width:380px;z-index:1;display:flex;flex-direction:column;align-items:center;gap:38px;}
   .join-head{display:flex;flex-direction:column;align-items:center;gap:10px;}
   .join-pts{font-weight:700;font-size:35px;color:#0d0d0d;line-height:1;letter-spacing:-.01em;}
   .join-sub{font-weight:500;font-size:16px;color:#0d0d0d;line-height:1.3;text-align:center;}
@@ -361,26 +351,6 @@
             <div class="ok-title">Approved</div>
           </div>
         </div>
-        <div class="ok-panel">
-          <div class="ok-sheet"></div>
-          <div class="lo-content">
-            <div class="lo-welcome">Thanks, Sam!</div>
-            <div class="lo-card">
-              <span class="lo-id">04*****800</span>
-              <svg class="lo-check" viewBox="0 0 24 18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9.5l6 6L22 2"/></svg>
-            </div>
-            <div class="lo-actions">
-              <button class="lo-act">
-                <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2h10v19l-2.5-1.6L12 21l-2.5-1.6L7 21z"/><path d="M13.4 7.6c-.5-.6-1.6-.8-2.3-.3-.7.5-.5 1.5.3 1.8l1.3.5c.9.4 1 1.4.2 1.9-.7.5-1.8.3-2.3-.3"/><path d="M12 6v1.2M12 12v1.2"/></svg>
-                <span class="lbl">Send receipt</span>
-              </button>
-              <button class="lo-act" id="earnBtn">
-                <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v9h14v-9M12 8v13"/><path d="M12 8S10 3 7.5 4.5 9 8 12 8zM12 8s2-5 4.5-3.5S15 8 12 8z"/></svg>
-                <span class="lbl">Earn points</span>
-              </button>
-            </div>
-          </div>
-        </div>
         <div class="foot"><div class="powered">powered by<svg class="meandu" aria-hidden="true"><use href="#meandu"/></svg></div></div>
       </section>
 
@@ -389,6 +359,7 @@
         <div class="sheet"></div>
         <div class="sheet-top"></div>
         <svg class="close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+        <div class="join-thanks">Thanks, Sam!</div>
         <div class="gift-circle">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path class="g-body" d="M5 12v9h14v-9"/>
@@ -534,17 +505,11 @@
       // 04 processing
       show('proc'); await sleep(1500);
 
-      // 05 approved → loyalty sheet slides in 0.5s after the tick finishes
-      show('ok');
-      const okPanel=document.querySelector('.screen.ok .ok-panel');
-      okPanel.classList.remove('slid'); void okPanel.offsetWidth;
-      await sleep(900);
-      okPanel.classList.add('slid');
-      await sleep(2700);
-      await press(document.getElementById('earnBtn')); await sleep(450);
+      // 05 approved — tick confirms the payment, brief hold
+      show('ok'); await sleep(2000);
 
-      // 06 join rewards — auto-press Join and earn
-      show('join'); await sleep(2300);
+      // 06 join rewards (Thanks, Sam!) — fades in, then auto-press Join and earn
+      show('join'); await sleep(2600);
       await press(document.getElementById('joinEarnBtn')); await sleep(450);
 
       // 07 rewards success — top number counts in, bar fills alongside (balance stays static)
